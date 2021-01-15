@@ -1,0 +1,21 @@
+<header>
+  <ul>
+    <li><a [routerLink]="['/sobre-mi']" [routerLinkActive] = "['actived']">Sobre mí</a></li> 
+    <li><a [routerLink]="['/proyectos']" [routerLinkActive] = "['actived']">Proyectos</a></li>  
+    <li id="logo"><a href="#" >FF</a></li>
+    <li><a [routerLink]="['/crear']" [routerLinkActive] = "['actived']">Crear proyecto</a></li> 
+    <li><a [routerLink]="['/contacto']" [routerLinkActive] = "['actived']">Contacto</a></li>
+  </ul> 
+</header>
+
+<div class="clearfix"></div>
+
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+<div class="clearfix"></div>
+
+<footer>
+  <p>Master en Javascript</p>
+</footer>
